@@ -1,7 +1,7 @@
 /*
  * Simon Says Game Main Screen
  * author:
- * Simon 'intenceC' Katznelson
+ * Simon 'intenseC' Katznelson
 */
 
 // TODO add listener on navigation.pop() to properly unmount object
