@@ -1,7 +1,7 @@
 /*
  * Simon Says Game Core App
  * author:
- * Simon 'intenceC' Katznelson
+ * Simon 'intenseC' Katznelson
 */
 //=================================================================
 //=================================================================
