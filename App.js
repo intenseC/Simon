@@ -115,8 +115,6 @@ export default function App() {
     store.dispatch(setIdx());
   }
 
-  //fillScores();
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Score Table">
