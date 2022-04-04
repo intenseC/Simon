@@ -360,7 +360,7 @@ componentWillUnmount() {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style = {styles.container}>
         <View>
           <ScrollView
             ref = {ref => (this.scrollView = ref)}
