@@ -13,65 +13,21 @@ import mainScreen from './src/mainScr.js';
 
 import {
   /**/
-  increment,
-  decrement,
   setVal,
   setIdx,
   store,
 } from './src/eRedux.js';
 
-import Tone from 'react-native-tone-android';
-
-import {Provider, connect} from 'react-redux';
-
-import {applyMiddleware, createStore, combineReducers} from 'redux';
-
-import {
-  createReduxContainer,
-  createNavigationReducer,
-} from 'react-navigation-redux-helpers';
-
-import {
-  createReduxBoundAddListener,
-  createReactNavigationReduxMiddleware,
-} from 'react-navigation-redux-helpers';
-
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
-
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import type {Node} from 'react';
-
 import {
   Button,
-  SafeAreaView,
-  RefreshControl,
   ScrollView,
-  StatusBar,
-  StyleSheet,
   Text,
-  useColorScheme,
   View,
-  TouchableOpacity,
-  AppRegistry,
 } from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-import {createStackNavigator} from 'react-navigation-stack';
-
-import {StackNavigator, addNavigationHelpers} from 'react-navigation';
 
 import {useState, useEffect, useRef} from 'react';
 
@@ -87,10 +43,7 @@ let scoreTable = '';
 global.fillScr = 0;
 //=================================================================
 //=================================================================
-{
-  /*
-   */
-}
+
 //=================================================================
 //=================================================================
 
@@ -258,7 +211,6 @@ function scoreScreen({navigation}) {
     /* */
   );
 }
-/*   */
+
 //=================================================================
 //=================================================================
-/*   */
