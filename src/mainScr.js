@@ -4,7 +4,6 @@
  * Simon 'intenceC' Katznelson
  */
 
-
 //=================================================================
 //=================================================================
 // Dependencies
@@ -112,6 +111,7 @@ export default class mainScreen extends React.Component {
     clearInterval(this.pTick);
   }
 
+
   getBtnSt() {
     if (this.state.btnA === 1) {
       return 1;
@@ -204,8 +204,7 @@ export default class mainScreen extends React.Component {
         }
       } else if (t === 2) {
         this.btnTog(btn[botQue[inCue++]], 1);
-        //  console.log("btn: " + btn[botQue[inCue]]);
-        //  console.log("inque: " + inCue + " idx: " + queIdx);
+
       }
     }, 100);
   }
@@ -239,7 +238,7 @@ export default class mainScreen extends React.Component {
     if (this.botAtPlay === 1) {
       let randKey = Math.floor(Math.random() * 4);
       botQue[++queIdx] = randKey;
-      //  console.log('rnd :' + randKey);
+
       this.playSeq();
       this.botAtPlay = 0;
     }
@@ -247,7 +246,7 @@ export default class mainScreen extends React.Component {
 
   //=================================================================
   //=================================================================
-  /*    Running Lights   */
+
   /*  15ms tick routine  */
   pTick = setInterval(() => {
     tick = tick++ > 10 ? 0 : tick;
@@ -268,17 +267,12 @@ export default class mainScreen extends React.Component {
   }, 15);
 
   //=================================================================
-  /*
-  pStat = setInterval(() => {
-  },
-    255);
-*/
 
   tOut = () =>
     setTimeout(() => {
       clearTimeout(this.tOut);
       clean();
-      //        this.props.navigation.pop();
+
       this.props.navigation.navigate('Score Table');
     }, 350);
   //=================================================================
@@ -300,8 +294,7 @@ export default class mainScreen extends React.Component {
       case 3:
         break;
     }
-    //  this.setState({  key: Key });
-    //  console.log(this.props.route.path);
+
   }
   //===============================================================
   //===============================================================
