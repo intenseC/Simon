@@ -111,13 +111,6 @@ export default class mainScreen extends React.Component {
   componentWillUnmount() {
     clearInterval(this.pTick);
   }
-  /*
-componentDidMount() {
-}
-componentWillUnmount() {
- this.gameStop();
-}
-*/
 
   getBtnSt() {
     if (this.state.btnA === 1) {
