@@ -363,13 +363,13 @@ componentWillUnmount() {
       <View style={styles.container}>
         <View>
           <ScrollView
-            ref={ref => (this.scrollView = ref)}
+            ref = {ref => (this.scrollView = ref)}
             onContentSizeChange={(contentWidth, contentHeight) => {
               this.scrollView.scrollToEnd({animated: true});
             }}
-            style={styles.output}
+            style = {styles.output}
             nestedScrollEnabled={true}>
-            <Text style={styles.full}>
+            <Text style = {styles.full}>
               {this.state.output === '' ? '' : this.state.output}
             </Text>
           </ScrollView>
@@ -377,9 +377,9 @@ componentWillUnmount() {
           {this.createBtns()}
 
           <TouchableHighlight
-            underlayColor="#FFF"
-            style={styles.buttonGameX}
-            onPress={() => {
+            underlayColor = "#FFF"
+            style = {styles.buttonGameX}
+            onPress = {() => {
               this.gameInit();
             }}>
             <Text style={styles.buttonText}>
@@ -387,19 +387,19 @@ componentWillUnmount() {
             </Text>
           </TouchableHighlight>
 
-          <View style={styles.view}>
-            <Modal transparent={true} visible={this.state.modalVisible}>
-              <View style={styles.view}>
-                <View style={styles.modalView}>
-                  <Text style={styles.modalText}>{`Your Score: ${(
+          <View style = {styles.view}>
+            <Modal transparent = {true} visible={this.state.modalVisible}>
+              <View style = {styles.view}>
+                <View style = {styles.modalView}>
+                  <Text style = {styles.modalText}>{`Your Score: ${(
                     global.Score - 4
                   ).toString()}`}</Text>
 
                   <TextInput
-                    style={styles.modalText}
-                    placeholder="Enter your Name!"
-                    onChangeText={text => (eText = text)}
-                    defaultValue={text}
+                    style = {styles.modalText}
+                    placeholder = "Enter your Name!"
+                    onChangeText = {text => (eText = text)}
+                    defaultValue = {text}
                   />
 
                   <TouchableHighlight
@@ -422,7 +422,7 @@ componentWillUnmount() {
                       this.setState({modalVisible: false});
                       this.tOut();
                     }}>
-                    <Text style={styles.buttonText}> Confirm </Text>
+                    <Text style = {styles.buttonText}> Confirm </Text>
                   </TouchableHighlight>
 
                   <TouchableHighlight
